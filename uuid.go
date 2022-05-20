@@ -40,3 +40,7 @@ func (i *UUID) UnmarshalDynamoDBAttributeValue(av *dynamodb.AttributeValue) erro
 	return nil
 
 }
+
+func (i UUID) String() string {
+	return i.U.String()
+}
